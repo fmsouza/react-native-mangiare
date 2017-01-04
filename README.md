@@ -1,6 +1,6 @@
 # React Native Seed
 
-React Native seed is a basic configuration for starting new projects.
+React Native seed is a basic configuration with tabs for starting new projects.
 
 This is open source and perfect for any newbie to start with React Native.
 
