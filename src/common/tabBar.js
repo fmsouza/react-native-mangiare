@@ -1,17 +1,22 @@
 import React from 'react';
 import { View, TouchableOpacity } from 'react-native';
 import { Icon } from './index';
+import Theme from '../theme';
 
 const Styles = {
-  tab: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center'
-  },
-  tabs: {
-    height: 44,
-    flexDirection: 'row'
-  },
+    tab: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    tabs: {
+        height: 44,
+        flexDirection: 'row',
+        backgroundColor: Theme.toolbarDefaultBg,
+        shadowOffset: { width: 1, height: 1 },
+        shadowOpacity: 0.3,
+        shadowRadius: 3
+    },
 };
 
 const actvColor = '#000000';
