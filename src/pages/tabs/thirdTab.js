@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-import { CardView } from '../../common';
+import { CardView, Touchable } from '../../common';
 
 const Style = {
     card: {
@@ -34,6 +34,11 @@ export default props => (
                 <Text style={Style.instructions}>
                     This is the third tab.
                 </Text>
+                <Touchable onPress={() => props.navigator.push({ id: 'second' })}>
+                    <Text style={Style.instructions}>
+                        Go to Second page.
+                    </Text>
+                </Touchable>
             </CardView>
         </View>
     </View>
