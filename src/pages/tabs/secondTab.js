@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-import { CardView, Header } from '../../common';
+import { CardView } from '../../common';
 
 const Style = {
     card: {
@@ -26,12 +26,6 @@ const Style = {
 
 export default props => (
     <View style={{ flex: 1 }}>
-        <Header>
-            <Header.Title>
-                <Text>Tab 2</Text>
-            </Header.Title>
-        </Header>
-    
         <View style={Style.container}>
             <CardView style={Style.card}>
                 <Text style={Style.welcome}>
