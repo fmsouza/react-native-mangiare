@@ -13,9 +13,18 @@ function getSize(size) {
     }
 } 
 
-export default ({ name, size, color }) => {
-    name = (Platform.OS === 'ios') ? `ios-${name}` : `md-${name}`;
-    size = getSize(size);
-    color = color || '#000';
-    return <Ionicon name={name} size={size} color={color} />;
-};
+export default class Icon extends React.Component {
+
+    setNativeProps(props) {
+        this.refs.icon.setNativeProps(props);
+    }
+
+    render() {
+        let { name, size, color } = this.props;
+        name = (Platform.OS === 'ios') ? `ios-${name}` : `md-${name}`;
+        size = getSize(size);
+        color = color || '#000';
+        return <Ionicon name={name} size={size} color={color} ref="icon" />;
+    }
+
+}

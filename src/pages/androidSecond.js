@@ -25,7 +25,7 @@ export default class Second extends React.Component {
     state = { text: '' };
 
     componentWillMount() {
-        this.setState({ text: this.props.args.foo });
+        if (this.props.args) this.setState({ text: this.props.args.foo });
     }
 
     onChangeText(text) {
