@@ -15,6 +15,7 @@ export default class TabView extends React.Component {
                     scrollWithoutAnimation={this.props.scrollWithoutAnimation || false}
                     renderTabBar={() =>
                         <TabBar
+                            style={this.props.style}
                             activeColor={this.props.activeColor}
                             inactiveColor={this.props.inactiveColor}
                         />
