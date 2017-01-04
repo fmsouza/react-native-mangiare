@@ -10,8 +10,15 @@ export default class TabView extends React.Component {
             <View style={{ flex: 1 }}>
                 <ScrollableTabView
                     tabBarPosition={this.props.position || 'bottom'}
+                    locked={this.props.locked || false}
                     initialPage={this.props.initialPage || 0}
-                    renderTabBar={() => <TabBar />}
+                    scrollWithoutAnimation={this.props.scrollWithoutAnimation || false}
+                    renderTabBar={() =>
+                        <TabBar
+                            activeColor={this.props.activeColor}
+                            inactiveColor={this.props.inactiveColor}
+                        />
+                    }
                 >
                     {this.props.children}
                 </ScrollableTabView>
