@@ -1,4 +1,4 @@
-import Second from './androidSecond';
+import Second from './second';
 import Tabs from './tabsPage';
 
 export { Second, Tabs };
