@@ -1,4 +1,5 @@
+import Login from './login';
 import Second from './second';
 import Tabs from './tabsPage';
 
-export { Second, Tabs };
+export { Login, Second, Tabs };
