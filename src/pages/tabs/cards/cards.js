@@ -17,14 +17,14 @@ const Style = {
 };
 
 const cards = [
-    { name: 'Francielle Hemsworth', action: 'cook', plate: 'strogonoff', avatar: 'https://lorempixel.com/300/200/people/1' },
-    { name: 'Mirella Presley', action: 'eat', plate: 'japanese food', avatar: 'https://lorempixel.com/300/200/people/2' },
-    { name: 'Jumes Sulley', action: 'cook', plate: 'italian food', avatar: 'https://lorempixel.com/300/200/people/3' },
-    { name: 'Carl Livingson', action: 'eat', plate: 'pizza', avatar: 'https://lorempixel.com/300/200/people/4' },
-    { name: 'Pharell Wage', action: 'cook', plate: 'lasagna', avatar: 'https://lorempixel.com/300/200/people/5' },
-    { name: 'Megan June', action: 'eat', plate: 'popcorn', avatar: 'https://lorempixel.com/300/200/people/6' },
-    { name: 'Miranda Prisley', action: 'eat', plate: 'hamburguer', avatar: 'https://lorempixel.com/300/200/people/7' },
-    { name: 'Caroline Jameson', action: 'eat', plate: 'ice cream', avatar: 'https://lorempixel.com/300/200/people/8' }
+    { name: 'Francielle Hemsworth', action: 'cook', plate: 'strogonoff', avatar: 'https://placehold.it/300x200' },
+    { name: 'Mirella Presley', action: 'eat', plate: 'japanese food', avatar: 'https://placehold.it/300x200' },
+    { name: 'Jumes Sulley', action: 'cook', plate: 'italian food', avatar: 'https://placehold.it/300x200' },
+    { name: 'Carl Livingson', action: 'eat', plate: 'pizza', avatar: 'https://placehold.it/300x200' },
+    { name: 'Pharell Wage', action: 'cook', plate: 'lasagna', avatar: 'https://placehold.it/300x200' },
+    { name: 'Megan June', action: 'eat', plate: 'popcorn', avatar: 'https://placehold.it/300x200' },
+    { name: 'Miranda Prisley', action: 'eat', plate: 'hamburguer', avatar: 'https://placehold.it/300x200' },
+    { name: 'Caroline Jameson', action: 'eat', plate: 'ice cream', avatar: 'https://placehold.it/300x200' }
 ];
 
 export default class Cards extends React.Component {
