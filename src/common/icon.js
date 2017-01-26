@@ -24,7 +24,7 @@ export default class Icon extends React.Component {
         name = (Platform.OS === 'ios') ? `ios-${name}` : `md-${name}`;
         size = getSize(size);
         color = color || '#000';
-        return <Ionicon name={name} size={size} color={color} ref="icon" />;
+        return <Ionicon {...this.props} name={name} size={size} color={color} ref="icon" />;
     }
 
 }

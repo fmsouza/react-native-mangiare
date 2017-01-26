@@ -1,5 +1,5 @@
 import Cards from './cards';
 import SecondTab from './secondTab';
-import ThirdTab from './thirdTab';
+import Settings from './settings';
 
-export { Cards, SecondTab, ThirdTab };
+export { Cards, SecondTab, Settings };
