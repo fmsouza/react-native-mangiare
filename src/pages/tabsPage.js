@@ -1,10 +1,10 @@
 import React from 'react';
 import { View, Platform, Text } from 'react-native';
 import { TabView, Header } from '../common';
-import { FirstTab, SecondTab, ThirdTab } from './tabs';
+import { Cards, SecondTab, ThirdTab } from './tabs';
 
 export default class TabsPage extends React.Component {
-    state = { title: 'First' };
+    state = { title: '' };
 
     onChangeTab(tab) {
         this.setState({ title: tab.ref.props.title });
@@ -14,7 +14,7 @@ export default class TabsPage extends React.Component {
         const { navigator } = this.props;
         return (
             <View style={{ flex: 1 }}>
-                <Header>
+                <Header noShadow>
                     <Header.Title>
                         <Text>{this.state.title}</Text>
                     </Header.Title>
@@ -25,9 +25,9 @@ export default class TabsPage extends React.Component {
                     scrollWithoutAnimation={Platform.OS === 'ios'}
                     initialPage={0}
                 >
-                    <FirstTab tabLabel="baseball" title="First" navigator={navigator} />
-                    <SecondTab tabLabel="basketball" title="Second" navigator={navigator} />
-                    <ThirdTab tabLabel="beer" title="Third" navigator={navigator} />
+                    <Cards tabLabel="people" navigator={navigator} />
+                    <SecondTab tabLabel="chatbubbles" title="Second" navigator={navigator} />
+                    <ThirdTab tabLabel="settings" title="Third" navigator={navigator} />
                 </TabView>
             </View>
         );

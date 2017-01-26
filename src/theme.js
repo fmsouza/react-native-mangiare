@@ -5,7 +5,7 @@ export default {
 
     titleFontSize: 17,
     titleFontColor: '#000',
-    toolbarDefaultBg: '#EEEEEE',
+    toolbarDefaultBg: '#FFFFFF',
     toolbarHeight: (Platform.OS === 'ios') ? 70 : 55,
     statusBarStyle: 'default',
     get statusBarColor() {
