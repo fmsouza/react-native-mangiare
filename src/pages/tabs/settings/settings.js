@@ -56,7 +56,9 @@ export default class Settings extends React.Component {
             name: 'Renato Gonçalves',
             email: 'renagon@gmail.com',
             avatar: 'https://placehold.it/50x50'
-        }
+        },
+        toggleSounds: false,
+        toggleNotifications: false
     };
 
     onPressLogOut() {
@@ -92,8 +94,8 @@ export default class Settings extends React.Component {
                         <Text>Sons</Text>
                     </View>
                     <Switch
-                        onValueChange={value => this.setState({ trueSwitchIsOn: value })}
-                        value={this.state.trueSwitchIsOn}
+                        onValueChange={value => this.setState({ toggleSounds: value })}
+                        value={this.state.toggleSounds}
                     />
                 </View>
                 <View style={{ ...Style.listItemSwitch, ...Style.borderBottom, ...Style.listWithMargin }}>
@@ -102,8 +104,8 @@ export default class Settings extends React.Component {
                         <Text>Receber notificações</Text>
                     </View>
                     <Switch
-                        onValueChange={value => this.setState({ trueSwitchIsOn: value })}
-                        value={this.state.trueSwitchIsOn}
+                        onValueChange={value => this.setState({ toggleNotifications: value })}
+                        value={this.state.toggleNotifications}
                     />
                 </View>
                 <View style={{ ...Style.listItem, ...Style.borderBottom, ...Style.listWithMargin }}>
