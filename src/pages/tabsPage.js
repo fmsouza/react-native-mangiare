@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Platform, Text } from 'react-native';
 import { TabView, Header } from '../common';
-import { Cards, SecondTab, Settings } from './tabs';
+import { Cards, Chats, Settings } from './tabs';
 
 export default class TabsPage extends React.Component {
     state = { title: '' };
@@ -27,7 +27,7 @@ export default class TabsPage extends React.Component {
                     locked
                 >
                     <Cards tabLabel="people" navigator={navigator} />
-                    <SecondTab tabLabel="chatbubbles" title="Second" navigator={navigator} />
+                    <Chats tabLabel="chatbubbles" title="Chats" navigator={navigator} />
                     <Settings tabLabel="settings" title="Settings" navigator={navigator} />
                 </TabView>
             </View>

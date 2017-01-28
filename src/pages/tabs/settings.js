@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, ScrollView, Image, Switch } from 'react-native';
-import { CardView, Icon, Touchable } from '../../../common';
+import { CardView, Icon, Touchable } from '../../common';
 
 const Style = {
     container: {
