@@ -24,6 +24,7 @@ export default class TabsPage extends React.Component {
                     onChangeTab={this.onChangeTab.bind(this)}
                     scrollWithoutAnimation={Platform.OS === 'ios'}
                     initialPage={0}
+                    locked
                 >
                     <Cards tabLabel="people" navigator={navigator} />
                     <SecondTab tabLabel="chatbubbles" title="Second" navigator={navigator} />
