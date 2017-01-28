@@ -1,5 +1,5 @@
+import Chat from './chat';
 import Login from './login';
-import Second from './second';
 import Tabs from './tabsPage';
 
-export { Login, Second, Tabs };
+export { Chat, Login, Tabs };

@@ -1,5 +1,6 @@
 import React from 'react';
 import { ScrollView } from 'react-native';
+import { Touchable } from '../../../common';
 import ChatListItem from './chatListItem';
 
 const Style = {
@@ -20,8 +21,16 @@ export default class Chats extends React.Component {
 
     state = { chats };
 
+    onPressListItem(item) {
+        this.props.navigator.push({ id: 'chat', args: item });
+    }
+
     renderChats() {
-        return this.state.chats.map(chat => <ChatListItem key={chat.name} {...chat} />);
+        return this.state.chats.map(chat => (
+            <Touchable key={chat.name} onPress={() => this.onPressListItem(chat)}>
+                <ChatListItem {...chat} />
+            </Touchable>
+        ));
     }
 
     render() {

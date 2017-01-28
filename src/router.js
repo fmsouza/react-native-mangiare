@@ -1,5 +1,5 @@
 import React from 'react';
-import { Login, Second, Tabs } from './pages';
+import { Chat, Login, Tabs } from './pages';
 
 export default (route, navigator) => {
     switch (route.id) {
@@ -11,8 +11,8 @@ export default (route, navigator) => {
         case 'tabs':
             return <Tabs navigator={navigator} args={route.args} />;
 
-        case 'second':
-            return <Second navigator={navigator} args={route.args} />;
+        case 'chat':
+            return <Chat navigator={navigator} args={route.args} />;
 
     }
 };
