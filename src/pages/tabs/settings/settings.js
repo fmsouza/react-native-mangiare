@@ -4,7 +4,8 @@ import { CardView, Icon, Touchable } from '../../../common';
 
 const Style = {
     container: {
-        paddingVertical: 10
+        paddingVertical: 10,
+        backgroundColor: '#fff'
     },
     headerCard: {
         padding: 10,
